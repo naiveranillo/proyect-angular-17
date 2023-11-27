@@ -23,11 +23,11 @@ export class LabsComponent {
   disabled = true;
   img = 'https://w3schools.com/howto/img_avatar.png';
 
-  person = {
+  person = signal({
     name: 'Naiver',
     age: 23,
     avatar: this.img
-  }
+  })
 
   clickHandler(){
     alert('Hola');
